@@ -46,7 +46,7 @@ Deployed url:
 
 ### Tasks:
 
-- **URL:** `http://localhost:3000/api/v1/trades/upload`
+- **Live URL:** `https://koinx-assign-1.onrender.com/api/v1/trades/upload`
 - **Method:** `POST`
 - **Description:** This endpoint allows you to upload a CSV file for processing.
 
@@ -56,9 +56,9 @@ Deployed url:
 2.  In Postman, select `POST` as the method and set the URL to `http://13.201.56.56/api/upload`.
 3.  In the `Body` tab, select `form-data`, then choose `File` as the type and upload a CSV file of your choice.
 4.  Send the request and check the response to ensure that the file is processed correctly and the data is uploaded to the database.
-    screenshot-[]
+    screenshot-[https://asset.cloudinary.com/dvp9end1y/7b04e5fb948386750a3279bc04dbf51f]
 
-- **URL:** `http://localhost:3000/api/v1/trades/balance`
+- **Live URL:** `https://koinx-assign-1.onrender.com/api/v1/trades/balance`
 - **Method:** `POST`
 - **Description:** This endpoint retrieves the balance based on the timestamp provided in the request body.
 
@@ -80,7 +80,12 @@ Deployed url:
 - Sample Request
 
 ```bash
-curl -X POST http://localhost:3000/api/v1/trades/balance \
-     -H "Content-Type: application/json" \
-     -d '{"timestamp": "2022-09-29T00:00:00Z"}'
+curl curl --location 'https://koinx-assign-1.onrender.com/api/v1/trades/balance' \
+--header 'Content-Type: application/json' \
+--data '
+{
+  "timestamp": "2022-09-29T00:00:00Z"
+}'
 ```
+
+screenshot-[https://asset.cloudinary.com/dvp9end1y/7b04e5fb948386750a3279bc04dbf51f]
